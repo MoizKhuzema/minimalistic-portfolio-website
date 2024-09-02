@@ -9,7 +9,7 @@ const TWITTER = "https://www.linkedin.com/in/moiz-khuzema/";
 const LINKEDIN = "https://www.linkedin.com/in/moiz-khuzema/";
 const INSTAGRAM = "https://instagram.com/moizkhuzema";
 
-const DISCORD_ID = "https://www.linkedin.com/in/moiz-khuzema/";
+const DISCORD_ID = "207204046115831809";
 
 type Work = {
   company: string;
