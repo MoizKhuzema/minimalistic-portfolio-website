@@ -17,19 +17,18 @@ module.exports = {
   },
   plugins: ["react"],
   rules: {
-    // Next.js
+    // Disabling TODO comments warning
+    "no-warning-comments": "off",
+
+    // React JSX spacing
+    "react/jsx-child-element-spacing": "off",
+
+    // Existing rules
     "@typescript-eslint/triple-slash-reference": "off",
     "react/react-in-jsx-scope": "off",
-
-    // Trailing spaces not allowed
-    "no-trailing-spaces": "off",
-
-    // Indentation and spacing
     "no-tabs": ["error"],
     "react/jsx-indent": ["error", 2],
     "react/jsx-indent-props": ["error", 2],
-
-    // Curly spacing and other format rules
     "@typescript-eslint/object-curly-spacing": ["error", "always"],
     "react-hooks/exhaustive-deps": "off",
     "@typescript-eslint/comma-dangle": "off",
@@ -48,8 +47,5 @@ module.exports = {
     "react/prefer-read-only-props": "off",
     "@typescript-eslint/ban-types": "off",
     radix: "off",
-
-    // Custom comments warning
-    "no-warning-comments": ["error", { "terms": ["todo", "fixme"], "location": "anywhere" }]
   },
 };
