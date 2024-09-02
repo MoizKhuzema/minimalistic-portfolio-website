@@ -21,17 +21,17 @@ module.exports = {
     "@typescript-eslint/triple-slash-reference": "off",
     "react/react-in-jsx-scope": "off",
 
+    // Trailing spaces not allowed
+    "no-trailing-spaces": "off",
+
+    // Indentation and spacing
     "no-tabs": ["error"],
     "react/jsx-indent": ["error", 2],
     "react/jsx-indent-props": ["error", 2],
 
-    /* must be a space for object curly spacing */
+    // Curly spacing and other format rules
     "@typescript-eslint/object-curly-spacing": ["error", "always"],
-
-    // this rule helped me like once (2 years ago)
     "react-hooks/exhaustive-deps": "off",
-
-    // Prettier
     "@typescript-eslint/comma-dangle": "off",
     "react/function-component-definition": "off",
     "react/jsx-tag-spacing": "off",
@@ -48,5 +48,8 @@ module.exports = {
     "react/prefer-read-only-props": "off",
     "@typescript-eslint/ban-types": "off",
     radix: "off",
+
+    // Custom comments warning
+    "no-warning-comments": ["error", { "terms": ["todo", "fixme"], "location": "anywhere" }]
   },
 };
